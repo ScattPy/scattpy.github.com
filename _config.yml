@@ -1,0 +1,50 @@
+pygments:       false
+permalink:      /:categories/:title/
+paginate:       5
+
+exclude:
+    - README.md
+    - Rakefile
+
+title:          ScattPy
+url:            http://vinokurov.github.com/scattpy/
+feed:           /scattpy/atom.xml
+description:    "scattpy - Python scikits package for light scattering computations."
+comment:        Light Scattering methods for Python
+
+author:
+    name:       Alexander Vinokurov
+    email:      alexaner.a.vinokurov@gmail.com
+    
+about: >
+    
+disqus:
+    id:         vinokurov
+
+nav:
+    - name:     Blog
+      url:      /scattpy/
+    
+    - name:     Portfolio
+      url:      /scattpy/portfolio/
+    
+    - name:     About
+      url:      /scattpy/about/
+      subnav:
+        - name: Contact
+          url:  mailto:alexander.a.vinokurov-at-dotcom-after-gmail
+    
+
+footer:
+      
+copyright:
+    - Design by <a href="http://ipsleung.com">Iris Leung</a>, Jekyll template by <a href="http://appden.com">Scott Kyle</a>
+      
+css:
+    - /scattpy/lib/appden.css
+    - /scattpy/lib/syntax.css
+    
+js:
+    - http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js
+    - /scattpy/lib/mootools-more.js
+    - /scattpy/lib/appden.js

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="Jekyll" />
+		<meta name="author" content="{{ site.author.name }}" />
+		<meta name="description" content="{{ site.description }}" />
+
+		<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+		
+		{% for css in site.css %}
+			<link rel="stylesheet" href="{{ css }}" type="text/css" />
+		{% endfor %}
+		
+		{% for css in page.css %}
+			<link rel="stylesheet" href="{{ css }}" type="text/css" />
+		{% endfor %}
+	</head>
+	<body>
+		<div id="header">
+			<h1>
+				<a href="{{ site.url }}">{{ site.title }}</a>
+			</h1>
+			
+			<div>
+				<span>/*</span> {{ site.comment }} <span>*/</span>
+			</div>
+			
+			<a href="{{ site.feed }}" id="subscribe">Subscribe</a>
+			
+			{% include nav.html %}
+		</div>
+		
+		<div id="content">
+			<div id="alpha">
+				{{ content }}
+			</div>
+			
+			<div id="beta">
+				{% if page.sidebar != false %}
+					{% include sidebar.html %}
+				{% endif %}
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+		
+		<div id="footer">
+			<div id="about">
+				{% for phrase in site.footer %}
+					<div>
+						<h6>{{ phrase.verb }}</h6>
+						{{ phrase.action }}
+					</div>
+				{% endfor %}
+			</div>
+			<div id="copyright">
+				{% for line in site.copyright %}
+					<div>{{ line }}</div>
+				{% endfor %}
+			</div>
+		</div>
+		
+		{% for js in site.js %}
+			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
+		
+		{% for js in page.js %}
+			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
+		
+		<script type="text/javascript">
+			(function(){
+				var links = document.getElementsByTagName('a');
+				var query = '?';
+				for (var i = 0; i < links.length; i++){
+					if (links[i].href.indexOf('#disqus_thread') >= 0){
+						query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+					}
+				}
+				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{{ site.disqus.id }}/get_num_replies.js' + query + '"></' + 'script>');
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+---
+layout:   post
+title:    An initial post
+category: python
+---
+
+Just an initial post.
+
+{% highlight python %}
+def test():
+	test
+{% endhighlight %}
+
