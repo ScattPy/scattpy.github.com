@@ -23,16 +23,16 @@ disqus:
 
 nav:
     - name:     Blog
-      url:      /
+      url:      /blog/
     
-    - name:     Portfolio
-      url:      /portfolio/
+    - name:     Download
+      url:      http://github.com/ScattPy/scikits.scattpy/downloads/
     
     - name:     About
       url:      /about/
-      subnav:
-        - name: Contact
-          url:  mailto:scattpy-at-dotcom-after-googlegroups
+
+    - name:     Contacts
+      url:      /contacts/
     
 
 footer:
