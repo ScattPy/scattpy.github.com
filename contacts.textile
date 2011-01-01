@@ -1,0 +1,11 @@
+--- 
+layout:     page
+permalink:  /contacts/
+title:      Contacts
+---
+
+h2. Contacts
+
+* For any support on the ScattPy please send e-mail to scattpy@googlegroups.com
+* If you have found a defect in the ScattPy, please submit it to the project's defect tracking system at http://github.com/ScattPy/scikits.scattpy/issues
+
