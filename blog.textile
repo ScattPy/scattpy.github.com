@@ -1,0 +1,7 @@
+--- 
+layout:     page
+permalink:  /blog/
+title:      ScattPy Blog
+---
+
+{% include posts.html %}
