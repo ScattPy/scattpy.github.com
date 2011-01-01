@@ -1,9 +1,7 @@
 pygments:       false
 permalink:      /:categories/:title/
 paginate:       10
-paginate_files:	
-    - index.html
-    - blog.html
+paginate_file:  blog.html
 
 exclude:
     - README.md
