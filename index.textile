@@ -4,6 +4,6 @@ permalink:  /
 title:      ScattPy
 ---
 
-ScattPy is python package that provides light scattering numerical methods.
-h3. Latest posts
+ScattPy is a python package that provides light scattering numerical methods.
+h2. Latest posts
 {% include posts.html %}
