@@ -11,3 +11,5 @@ def test():
 	test
 {% endhighlight %}
 
+Test formula:
+`$s=\sum_i=1^\infty s_n$`
