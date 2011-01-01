@@ -10,7 +10,7 @@ exclude:
 title:          ScattPy
 url:            http://scattpy.github.com
 feed:           /atom.xml
-description:    "scattpy - Python scikits package for light scattering computations."
+description:    "ScattPy - Python scikits package for light scattering computations."
 comment:        Light Scattering methods for Python
 
 author:
