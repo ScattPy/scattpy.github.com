@@ -27,7 +27,7 @@ nav:
       url:      /blog/
     
     - name:     Download
-      url:      http://github.com/ScattPy/scikits.scattpy/downloads/
+      url:      /download/
     
     - name:     About
       url:      /about/

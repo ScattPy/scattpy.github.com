@@ -1,0 +1,49 @@
+--- 
+layout:     page
+permalink:  /download/
+title:      Download
+---
+
+h2. Downloads
+
+h3. Version 0.1.0
+
+The package can be installed using the standard Python packaging tools, e.g.
+{% highlight bash %}
+$ sudo pip install scikits.scattpy
+{% endhighlight %}
+or
+{% highlight bash %}
+$ sudo easy_install scikits.scattpy
+{% endhighlight %}
+
+For the manual installation of the package download the sources
+* "scikits.scattpy-0.1.0.zip":http://github.com/ScattPy/scikits.scattpy/zipball/0.1.0 ,
+* "scikits.scattpy-0.1.0.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/0.1.0 .
+Unzip them and run
+{% highlight bash %}
+$ sudo python setup.py install
+{% endhighlight %}
+
+Note, that ScattPy requires:
+* python v.2.x (>2.5)
+* numpy
+* scipy
+* f2py
+* fortran77 compiler
+* numdifftools
+
+h3. Developement version
+
+To install the ScattPy developement version download
+* "scikits.scattpy-0.1.0-git.zip":http://github.com/ScattPy/scikits.scattpy/zipball/master ,
+* "scikits.scattpy-0.1.0-git.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/master .
+
+or download it from the git repository
+{% highlight bash %}
+$ git clone git://github.com/ScattPy/scikits.scattpy.git
+{% endhighlight %}
+
+
+ For any support on the ScattPy please send e-mail to "scattpy@googlegroups.com":scattpy@googlegroups.com
+ If you have found a defect in the ScattPy, please submit it to the project's defect tracking system at "http://github.com/ScattPy/scikits.scattpy/issues":http://github.com/ScattPy/scikits.scattpy/issues
