@@ -5,7 +5,7 @@ category: releases
 ---
 
 ScattPy v.0.1.0 is released.
-The package is registered in the Python package index (PyPI) as "scikits.scattpy":http://pypi.python.org/pypi/scikits.scattpy/0.1.0 and can be automatically installed using the standard tools such as @pip@ and @easy_install@. Please refer to the "download":/downloads/ page for instructions on manual download and installation.
+The package is registered in the Python package index (PyPI) as "scikits.scattpy":http://pypi.python.org/pypi/scikits.scattpy/0.1.0 and can be automatically installed using the standard tools such as @pip@ and @easy_install@. Please refer to the "download":/download/ page for instructions on manual download and installation.
 
 The package is well tested and is quite stable. However due to the lack of documentation it is still considered in beta phase.
 
