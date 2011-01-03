@@ -9,10 +9,13 @@ h2. Downloads
 h3. Version 0.1.0
 
 The package can be installed using the standard Python packaging tools, e.g.
+
 {% highlight bash %}
 $ sudo pip install scikits.scattpy
 {% endhighlight %}
+
 or
+
 {% highlight bash %}
 $ sudo easy_install scikits.scattpy
 {% endhighlight %}
@@ -20,7 +23,9 @@ $ sudo easy_install scikits.scattpy
 For the manual installation of the package download the sources
 * "scikits.scattpy-0.1.0.zip":http://github.com/ScattPy/scikits.scattpy/zipball/0.1.0 ,
 * "scikits.scattpy-0.1.0.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/0.1.0 .
+
 Unzip them and run
+
 {% highlight bash %}
 $ sudo python setup.py install
 {% endhighlight %}
@@ -40,6 +45,7 @@ To install the ScattPy developement version download
 * "scikits.scattpy-0.1.0-git.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/master .
 
 or download it from the git repository
+
 {% highlight bash %}
 $ git clone git://github.com/ScattPy/scikits.scattpy.git
 {% endhighlight %}
