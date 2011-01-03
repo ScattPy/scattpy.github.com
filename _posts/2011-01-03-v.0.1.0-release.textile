@@ -1,0 +1,52 @@
+---
+layout:   post
+title:    ScattPy v.0.1.0 Release
+category: releases
+---
+
+ScattPy v.0.1.0 is released.
+The package is registered in the Python package index (PyPI) as "scikits.scattpy":http://pypi.python.org/pypi/scikits.scattpy/0.1.0 and can be automatically installed using the standard tools such as @pip@ and @easy_install@. Please refer to the "download":/downloads/ page for instructions on manual download and installation.
+
+The package is well tested and is quite stable. However due to the lack of documentation it is still considered in beta phase.
+
+The ScattPy package is designed for modelling the light scattering by non-spherical particles. 
+Currently supported models are homogeneous and multi-layered particles with the following surface shapes:
+* spherical,
+* prolate and oblate spheroidal,
+* Chebyshev: `$r(\theta) = R(1+\varepsilon\cos(n\theta))$`
+illuminated by a plane wave. Besides, custom axi-symmetrical shapes can be used by declaring new shape classes derived from the @Shape@ class.
+
+With the ScattPy one can compute the following optical characteristics:
+* optical cross sections `$C_{\rm SCA}$`, `$C_{\rm EXT}$`,
+* efficiency factors  `$Q_{\rm SCA}$`, `$Q_{\rm EXT}$`,
+* scattering matrix elements `$S_{11}$` and `$S_{12}$` for specified scattering angles,
+* amplitude matrix for specified scattering angles.
+
+The following numerical methods are included:
+* separation of variables method (SVM) with spherical basis,
+* extended boundary conditions method (EBCM) with spherical basis,
+* integral point matching method (iPMM) with spherical basis (only homogeneous scatterers and TM mode are implemented).
+For more details on the methods please refer to the articles:
+* _V.G. Farafonov, A.A. Vinokurov, and V.B. Il'in. Comparison of the light scattering methods using the spherical basis. Opt.Spectrosc., 102:927-938, 2007._
+* _A.A. Vinokurov, V.G. Farafonov, and V.B. Il’in. Separation of variables method for multilayered non-spherical particles. J. Quant. Spectr. Rad. Transf., 110:1356–1368, 2009._
+
+
+Here's a short example of the ScattPy usage:
+{% highlight python %}
+from numpy import *
+from sciits.scattpy import *
+
+# declare a particle
+P = ProlateSpheroid(ab=1.5, xv=1., m=1.33+0.2j)
+
+# declare laboratory
+LAB = Lab(P, alpha=pi/4) 
+# Here alpha is the angle between the particle axis and 
+# the direction of the incident radiation propagation.
+
+# Solve the light scattering porblem with the EBCM method
+RES = ebcm(LAB,accuracyLimit=1e-10)
+
+# print scattered field efficiency factor Qsca for the TM and TE modes
+print LAB.get_Csca(RES.c_sca_tm)[1], LAB.get_Csca(RES.c_sca_te)[1]
+{% endhighlight %}

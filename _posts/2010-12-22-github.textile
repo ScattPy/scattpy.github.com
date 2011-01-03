@@ -1,0 +1,12 @@
+---
+layout:   post
+title:    GitHub
+category: github
+---
+
+We moved the developement of the ScattPy to the GitHub platform.
+Here are the main links:
+* "GitHub account page":http://github.com/ScattPy/
+* "ScattPy repository page":http://github.com/ScattPy/scikits.scattpy/
+* "Defect tracking system":http://github.com/ScattPy/scikits.scattpy/issues/
+
