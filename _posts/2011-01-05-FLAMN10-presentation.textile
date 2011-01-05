@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    Slides from the talk at the FLAMN-10
+title:    Slides from the FLAMN-10
 category: talks
 ---
 
