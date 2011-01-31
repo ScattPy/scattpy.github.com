@@ -13,14 +13,14 @@ The ScattPy package is designed for modelling the light scattering by non-spheri
 Currently supported models are homogeneous and multi-layered particles with the following surface shapes:
 * spherical,
 * prolate and oblate spheroidal,
-* Chebyshev: `$r(\theta) = R(1+\varepsilon\cos(n\theta))$`
+* Chebyshev: <img alt="$r(\theta)=R(1+\varepsilon\cos(n\theta))">
 
 illuminated by a plane wave. Besides, custom axi-symmetrical shapes can be used by declaring new shape classes derived from the @Shape@ class.
 
 With the ScattPy one can compute the following optical characteristics:
-* optical cross sections `$C_{\rm sca}$`, `$C_{\rm ext}$`,
-* efficiency factors  `$Q_{\rm sca}$`, `$Q_{\rm ext}$`,
-* scattering matrix elements `$S_{11}$` and `$S_{12}$` for specified scattering angles,
+* optical cross sections <img alt="$C_{\rm sca},\;C_{\rm ext}">,
+* efficiency factors <img alt="$Q_{\rm sca},\;Q_{\rm ext}">,
+* scattering matrix elements <img alt="$S_{11}"> and <img alt="$S_{12}"> for specified scattering angles,
 * amplitude matrix for specified scattering angles.
 
 The following numerical methods are included:
