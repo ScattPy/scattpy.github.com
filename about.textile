@@ -1,9 +1,8 @@
 --- 
-layout:     page
+layout:     nanohub
 permalink:  /about/
 title:      About ScattPy
 ---
 
-h2. About ScattPy
 
 

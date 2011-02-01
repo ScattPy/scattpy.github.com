@@ -1,7 +1,8 @@
 ---
-layout:   post
-title:    GitHub
-category: github
+layout:    post
+title:     GitHub
+category:  github
+author_id: vinokurov
 ---
 
 We moved the developement of the ScattPy to the GitHub platform.

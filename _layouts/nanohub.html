@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ <head>
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }} {% endif %}</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="{{ site.author.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+
+  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+
+{% for css in site.css %}
+  <link rel="stylesheet" href="{{ css }}" type="text/css" />
+{% endfor %}
+
+{% for css in page.css %}
+  <link rel="stylesheet" href="{{ css }}" type="text/css" />
+{% endfor %}
+
+{% for js in site.js %}
+	<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+{% endfor %}
+		
+</head>
+
+ <body>
+
+	<div id="header">
+		<h1><a href="/" title="nanoHUB.org">nanoHUB.org</a></h1>
+	<div id="nav">
+		<h2>Navigation</h2>
+		<ul class="menu">
+{% assign navitem = false %}
+{% for item in site.nav %}
+	{% if page.title == item.name %}{% assign navitem=item %}{%endif%}
+		<li class="{%if item.subnav%}parent {%endif%}item4"><a href="{{item.url}}"><span>{{item.name}}</span></a>{%if item.subnav%}
+		  <ul>
+		{% for subitem in item.subnav %}
+			{% if page.title == subitem.name %}{% assign navitem=item %}{% assign navsubitem=subitem %}{%endif%}
+		    <li class="item46"><a href="{{subitem.url}}"><span>{{subitem.name}}</span></a></li>
+		{% endfor %}
+		  </ul>
+		{%endif%}</li>
+{% endfor %}
+		</ul>
+		<div class="clear"></div>
+	</div><!-- / #nav -->
+{% if navitem %}
+	<div id="trail">
+		You are here: <a href="{{navitem.url}}">{{navitem.name}}</a> {% if navsubitem %}&rsaquo; <a href="{{navsubitem.url}}">{{navsubitem.name}}</a>{%endif%}	</div>
+{% endif %}
+
+  <div id="wrap">
+	<div id="content" class="com_content">
+		<div class="main section{%if navitem.subnav%} withleft{%endif%}">
+{% if navitem.subnav %}
+		<div class="aside">
+		  <ul class="menu">
+		  <li class="parent {%if page.title != navitem.name%}active {%endif%}item58"><a href="{{navitem.url}}"><span>{{navitem.name}}</span></a>
+		    <ul>
+		{% for subitem in navitem.subnav %}
+			<li {% if page.title == subitem.name %} id="current" {%endif%}class="{%if page.title == subitem.name%}active {%endif%}item59"><a href="{{subitem.url}}"><span>{{subitem.name}}</span></a></li>
+		{% endfor %}
+			</ul>
+			</li>
+		  </ul>
+		</div><!-- / #column-left -->
+		<div class="subject">
+{%endif%}
+{% if page.title %}
+			<div class="contentpaneopen heading">
+		<div class="content-header">
+	<h2 class="contentheading">{{page.title}}</h2>
+	</div>
+	</div>
+{% endif %}
+
+{% if page.title==null %}<div class="contentpaneopen">{%endif%}
+
+<p class="article_separator">&nbsp;</p>
+{{content}}
+
+
+
+</div>
+<p class="article_separator">&nbsp;</p>
+
+
+{% if navitem.subnav %}
+		</div><!-- / .subject -->
+{%endif%}
+		<div class="clear"></div>
+		</div><!-- / .main section -->
+	</div><!-- / #content -->
+	
+	<div id="bottom-nav">
+
+{% assign count = ['first','second','third','fourth'] %}
+{% for bitem in site.bottom_nav %}
+			<div class="four columns first">
+				<h3>{{bitem.title}}</h3>
+				<ul>
+			{% for bsubitem in bitem.subitems %}
+					<li><a href="{{bsubitem.url}}">{{bsubitem.title}}</a></li>
+			{% endfor %}
+				</ul>
+			</div>
+{% endfor %}
+			<div class="clear"></div>
+		</div>
+
+		<div id="footer">
+
+			<ul>
+<!--				<li class="policy"><a href="/legal/terms">Terms of use</a></li>-->
+{% for item in footer %}
+				<li>{{item}}</li>
+{%endfor%}
+			</ul>
+		</div><!-- / #footer -->
+  </div><!-- / #wrap -->
+
+{% for js in page.js %}
+	<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+{% endfor %}
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20668811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ </body>
+</html>
+
+

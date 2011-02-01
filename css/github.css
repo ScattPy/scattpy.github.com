@@ -1,0 +1,29 @@
+#posts{margin-top:0em;overflow:hidden;padding-top:.0em;}
+#posts .list{float:left;width:41em;}
+#posts li.post{list-style-type:none;margin-bottom:2em;}
+#posts .meta .who_when img,img.who_when{vertical-align:middle;padding:1px;border:1px solid #ccc;position:relative;top:-1px;}
+#posts .meta .who_when .author a{color:#94bfea;font-weight:bold;}
+#posts .meta .who_when .published a,#posts .meta .who_when .published{color:#ccc;}
+#posts .meta .who_when .status{color:#a00;}
+#posts .meta .respond{margin:.3em 0;padding-left:25px;background:transparent url(/lib/images/posts/bubble.png) 0 50% no-repeat;}
+#posts .entry-content{margin-top:1em;}
+#posts .entry-content blockquote{padding-left:1em;color:#666;}
+#posts .entry-content p{margin:1em 0;}
+/*
+#posts .entry-content pre{background-color:#f8f8f8;border:1px solid #ddd;font-size:90%;padding:.5em;}
+#posts .entry-content pre code{background-color:#f8f8f8;font-size:95%;}
+#posts .entry-content code{font-size:90%;background-color:#ddd;padding:0 .2em;}
+*/
+#posts .entry-content .img{margin:1em 0;padding:.3em;border:1px solid #ddd;max-width:540px;}
+#posts .entry-content p img{margin:0;}
+#posts .entry-content ul{margin-left:1.25em;}
+#posts .entry-content ol{margin-left:2em;}
+#posts .entry-content ul li{margin:.5em 0;}
+#posts .comments .comment .body img{max-width:39em;}
+/*
+.iphone #posts .list{width:100%;}
+#new_comment textarea{height:10em;}
+#posts pre{margin:1em 0;font-size:12px;background-color:#f8f8ff;border:1px solid #dedede;padding:.5em;line-height:1.5em;color:#444;overflow:auto;}
+#posts pre code{padding:0;font-size:12px;background-color:#f8f8ff;border:none;}
+#posts code{font-size:12px;background-color:#f8f8ff;color:#444;padding:0 .2em;border:1px solid #dedede;}
+*/
