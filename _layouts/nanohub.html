@@ -52,32 +52,33 @@
 
   <div id="wrap">
 	<div id="content" class="com_content">
-		<div class="main section{%if navitem.subnav%} withleft{%endif%}">
-{% if navitem.subnav %}
+		<div class="main section withleft">
 		<div class="aside">
 		  <ul class="menu">
+{% if navitem.subnav %}
 		  <li class="parent {%if page.title != navitem.name%}active {%endif%}item58"><a href="{{navitem.url}}"><span>{{navitem.name}}</span></a>
 		    <ul>
 		{% for subitem in navitem.subnav %}
 			<li {% if page.title == subitem.name %} id="current" {%endif%}class="{%if page.title == subitem.name%}active {%endif%}item59"><a href="{{subitem.url}}"><span>{{subitem.name}}</span></a></li>
 		{% endfor %}
+{%else%}
+		  <li class="parent active item5"><a href="/"><span>ScattPy</span></a>
+		    <ul>
+		{% for subitem in site.nav %}
+			<li {% if page.title == subitem.name %} id="current" {%endif%}class="{%if page.title == subitem.name%}active {%endif%}item59"><a href="{{subitem.url}}"><span>{{subitem.name}}</span></a></li>
+		{% endfor %}
+{%endif%}
 			</ul>
 			</li>
 		  </ul>
 		</div><!-- / #column-left -->
 		<div class="subject">
-{%endif%}
-{% if page.title %}
 			<div class="contentpaneopen heading">
 		<div class="content-header">
 	<h2 class="contentheading">{{page.title}}</h2>
 	</div>
 	</div>
-{% endif %}
 
-{% if page.title==null %}<div class="contentpaneopen">{%endif%}
-
-<p class="article_separator">&nbsp;</p>
 {{content}}
 
 
@@ -86,9 +87,7 @@
 <p class="article_separator">&nbsp;</p>
 
 
-{% if navitem.subnav %}
 		</div><!-- / .subject -->
-{%endif%}
 		<div class="clear"></div>
 		</div><!-- / .main section -->
 	</div><!-- / #content -->

@@ -778,7 +778,7 @@
 	Content header
 ---------------------------------------------------------------*/
 	#content-header {
-		margin-right: 250px;
+		margin-right: 0px;
 		padding: 0 0 1em 0;
 		}
 	.contentpaneopen {
@@ -791,13 +791,13 @@
 	#content-header h2,
 	.contentpaneopen .contentheading {
 		margin: 0 0 0 15px;
-		padding: 10px 0 0 0;
+		padding: 0px 0 0 0;
 		}
 	.contentpaneopen .contentheading {
 		padding-bottom: 10px;
 		border-bottom: 1px solid #eaeaea;
 		margin-left: 0;
-		padding-left: 15px;
+		padding-left: 0px;
 		}
 	#content-header h3, 
 	#content-header p {
