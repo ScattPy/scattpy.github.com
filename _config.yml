@@ -59,22 +59,27 @@ js:
     - /lib/mootools.js
     - /lib/hub.js
     - /lib/googlelatex.js
+    - /lib/bibcite.js
 
 authors:
     scattpy:
         name:     ScattPy team
+        full:     ScattPy team
         url:      http://scattpy.github.com
         email:    scattpy@googlegroups.com
     vinokurov:
         name:     Alexander Vinokurov
-        url:      http://alexander-vinourov.com
+        full:     "Dr.&nbsp;A.A.&nbsp;Vinokurov"
+        url:      http://alexander-vinokurov.com
         email:    alexander.a.vinokurov@gmail.com
         gravatar: 8d281fcf88c73c2c4503c7d12bc89e2a
     farafonov:
         name:     Victor Farafonov
+        full:     "Prof.&nbsp;V.G.&nbsp;Farafonov"
         email:    far@aanet.ru
     ilin:
         name:     "Vladimir Il'in"
+        full:     "Prof.&nbsp;V.B.&nbsp;Il'in"
         email:    vladimir_ilin@yahoo.com
 
 bottom_nav:
