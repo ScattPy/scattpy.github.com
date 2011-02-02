@@ -49,5 +49,6 @@ $ git clone git://github.com/ScattPy/scikits.scattpy.git
 {% endhighlight %}
 
 
- For any support on the ScattPy please contact "{{site.authors.vinokurov.full}}":{{site.authors.vinokurov.url}} by email "{{site.authors.vinokurov.email}}":mailto:{{site.authors.vinokurov.email}} or the whole ScattPy team by scattpy@googlegroups.com":mailto:scattpy@googlegroups.com . 
+ For any support on the ScattPy please contact "{{site.authors.vinokurov.full}}":{{site.authors.vinokurov.url}} by email "{{site.authors.vinokurov.email}}":mailto:{{site.authors.vinokurov.email}} or the whole ScattPy team by "scattpy@googlegroups.com":mailto:scattpy@googlegroups.com . 
+
  If you have found a defect in the ScattPy, please submit it to the project's defect tracking system at "http://github.com/ScattPy/scikits.scattpy/issues":http://github.com/ScattPy/scikits.scattpy/issues
