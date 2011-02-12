@@ -608,6 +608,50 @@
 	#toolbar li#myaccount a:hover {
 		background-position: right bottom;
 		}
+/* Help Tab */
+	#tab {
+		display: block;
+		position: absolute;
+		top: 76px;
+		right: 30px;
+		width: 13em;
+		height: 3em;
+		text-align: right;
+		margin: 0;
+		line-height: 1.2em;
+		font-size: 90%;
+		}
+	#tab.active a {
+		color: #fff;
+		background: #000 url("../../images/nav-shadow-bottom.png") 0 0 repeat-x;
+		}
+	#tab.active a span {
+		color: #fff;
+		}
+	#tab a { 
+		padding: 0;
+		color: #d7c2ef;
+		height: 3em;
+		display: block;
+		background: #594c61 url("../../images/nav-shadow-bottom.png") 0 0 repeat-x;
+		border: none;
+		}
+	#tab a span { 
+		padding: 1em 0 0 0;
+		padding-right: 25px;
+		background: transparent url("../../images/icons/help.png") 90% 50% no-repeat;
+		color: #d7c2ef;
+		height: 2em;
+		display: block;
+		border: none;
+		}
+	#tab a:hover {
+		color: #fff;
+		background: #000 url("../../images/nav-shadow-bottom.png") 0 0 repeat-x;
+		}
+	#tab a:hover span {
+		color: #fff;
+		}
 /*---------------------------------------------------------------
 	Navigation
 ---------------------------------------------------------------*/
