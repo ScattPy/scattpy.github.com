@@ -1,0 +1,14 @@
+---
+layout:   post
+title:    ScattPy v.0.1.1 Release
+category: releases
+author_id: vinokurov
+---
+
+ScattPy v.0.1.1 is released.
+
+h3. Changes
+
+* Sphinx documentation is added,
+* Minor changes in the names of some functions
+* Added "LayeredConfocalSpheroid":/docs/reference/generated/scikits.scattpy.LayeredConfocalSpheroid.html particle class
