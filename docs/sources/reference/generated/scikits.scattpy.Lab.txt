@@ -1,0 +1,33 @@
+scikits.scattpy.Lab
+===================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: Lab
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Lab.__init__
+      ~Lab.boundaries
+      ~Lab.boundaries_reversed
+      ~Lab.boundary
+      ~Lab.get_Cext
+      ~Lab.get_Cext_m
+      ~Lab.get_Csca
+      ~Lab.get_Csca_m
+      ~Lab.get_amplitude_matrix
+      ~Lab.get_inc
+      ~Lab.get_int_plr
+      ~Lab.get_vector_field_sca
+   
+   
+
+   
+   
+   

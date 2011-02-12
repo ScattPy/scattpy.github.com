@@ -1,0 +1,147 @@
+---
+layout: nanohub
+title: Particles
+
+next:
+     title: scikits.scattpy.HomogeneousParticle
+     url:   generated/scikits.scattpy.HomogeneousParticle.html
+
+topnav:
+   - title: Documentation
+     url:   /docs/
+
+   - title: ScattPy Reference
+     url:   index.html
+
+   - title: Particles
+     url:   #
+
+sidenav: '
+   <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">ScattPy User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ScattPy Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="shapes.html">Shapes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Particles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#homogeneous-particles">Homogeneous particles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.HomogeneousParticle.html">scikits.scattpy.HomogeneousParticle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.Sphere.html">scikits.scattpy.Sphere</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.ProlateSpheroid.html">scikits.scattpy.ProlateSpheroid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.OblateSpheroid.html">scikits.scattpy.OblateSpheroid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.ChebParticle.html">scikits.scattpy.ChebParticle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#layered-particles">Layered particles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.LayeredParticle.html">scikits.scattpy.LayeredParticle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.Layered_EqShape_Particle.html">scikits.scattpy.Layered_EqShape_Particle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.Layered_EqShapeEqVol_Particle.html">scikits.scattpy.Layered_EqShapeEqVol_Particle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.LayeredConfocalSpheroid.html">scikits.scattpy.LayeredConfocalSpheroid</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#effective-medium-theory">Effective Medium Theory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.EMT_Particle.html">scikits.scattpy.EMT_Particle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.EMT_MGarn_Particle.html">scikits.scattpy.EMT_MGarn_Particle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.EMT_IMGarn_Particle.html">scikits.scattpy.EMT_IMGarn_Particle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scikits.scattpy.EMT_Brugg_Particle.html">scikits.scattpy.EMT_Brugg_Particle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="laboratory.html">Laboratory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods.html">Methods</a></li>
+</ul>
+</li>
+</ul>
+
+'
+---
+
+<div class="sphinxdoc">
+
+  <div class="section" id="particles">
+<span id="id1"></span><h1>Particles<a class="headerlink" href="#particles" title="Permalink to this headline">¶</a></h1>
+<p>A particle is defined by its surface shape and the complex refractive index of its medium.
+In the case of a multilayered particle, each layer&#8217;s refractive index and surface shape
+should be defined.</p>
+<div class="section" id="homogeneous-particles">
+<h2>Homogeneous particles<a class="headerlink" href="#homogeneous-particles" title="Permalink to this headline">¶</a></h2>
+<p>A homogeneous particle can be defined as an instance of the <a class="reference internal" href="generated/scikits.scattpy.HomogeneousParticle.html#scikits.scattpy.HomogeneousParticle" title="scikits.scattpy.HomogeneousParticle"><tt class="xref py py-class docutils literal"><span class="pre">HomogeneousParticle</span></tt></a>.
+There are also several predefined classes for the most often used partiles.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.HomogeneousParticle.html#scikits.scattpy.HomogeneousParticle" title="scikits.scattpy.HomogeneousParticle"><tt class="xref py py-obj docutils literal"><span class="pre">HomogeneousParticle</span></tt></a>(shape,&nbsp;params,&nbsp;m)</td>
+<td>Class for homogeneous particles   ..</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.Sphere.html#scikits.scattpy.Sphere" title="scikits.scattpy.Sphere"><tt class="xref py py-obj docutils literal"><span class="pre">Sphere</span></tt></a>(xv,&nbsp;m)</td>
+<td>Homogeneous spherical particle   ..</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.ProlateSpheroid.html#scikits.scattpy.ProlateSpheroid" title="scikits.scattpy.ProlateSpheroid"><tt class="xref py py-obj docutils literal"><span class="pre">ProlateSpheroid</span></tt></a>(ab,&nbsp;xv,&nbsp;m)</td>
+<td>Homogeneous prolate spheroidal particle   ..</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.OblateSpheroid.html#scikits.scattpy.OblateSpheroid" title="scikits.scattpy.OblateSpheroid"><tt class="xref py py-obj docutils literal"><span class="pre">OblateSpheroid</span></tt></a>(ab,&nbsp;xv,&nbsp;m)</td>
+<td>Homogeneous oblate spheroidal particle   ..</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.ChebParticle.html#scikits.scattpy.ChebParticle" title="scikits.scattpy.ChebParticle"><tt class="xref py py-obj docutils literal"><span class="pre">ChebParticle</span></tt></a>(N,&nbsp;eps,&nbsp;xv,&nbsp;m)</td>
+<td>Homogeneous Chebyshev particle</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="layered-particles">
+<h2>Layered particles<a class="headerlink" href="#layered-particles" title="Permalink to this headline">¶</a></h2>
+<p>A layered particle can be defined as an instance of the <a class="reference internal" href="generated/scikits.scattpy.LayeredParticle.html#scikits.scattpy.LayeredParticle" title="scikits.scattpy.LayeredParticle"><tt class="xref py py-class docutils literal"><span class="pre">LayeredParticle</span></tt></a>.
+There are also several predefined classes for the most often used multilayered partiles.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.LayeredParticle.html#scikits.scattpy.LayeredParticle" title="scikits.scattpy.LayeredParticle"><tt class="xref py py-obj docutils literal"><span class="pre">LayeredParticle</span></tt></a>(layers)</td>
+<td>Class for layered particles</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.Layered_EqShape_Particle.html#scikits.scattpy.Layered_EqShape_Particle" title="scikits.scattpy.Layered_EqShape_Particle"><tt class="xref py py-obj docutils literal"><span class="pre">Layered_EqShape_Particle</span></tt></a>(shape0,&nbsp;params,&nbsp;ms,&nbsp;...)</td>
+<td>Layered particle whose layers have the same shapes, i.e.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.Layered_EqShapeEqVol_Particle.html#scikits.scattpy.Layered_EqShapeEqVol_Particle" title="scikits.scattpy.Layered_EqShapeEqVol_Particle"><tt class="xref py py-obj docutils literal"><span class="pre">Layered_EqShapeEqVol_Particle</span></tt></a>(shape0,&nbsp;...)</td>
+<td>Layered particle whose layers have the same shapes, i.e.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.LayeredConfocalSpheroid.html#scikits.scattpy.LayeredConfocalSpheroid" title="scikits.scattpy.LayeredConfocalSpheroid"><tt class="xref py py-obj docutils literal"><span class="pre">LayeredConfocalSpheroid</span></tt></a>(ab,&nbsp;xv,&nbsp;ms,&nbsp;volumes,&nbsp;...)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="effective-medium-theory">
+<h2>Effective Medium Theory<a class="headerlink" href="#effective-medium-theory" title="Permalink to this headline">¶</a></h2>
+<p>Inhomogeneous scatterers can also be treated with the effective medium theory (EMT).
+An EMT particle is an instance of a class derrivered from the <a class="reference internal" href="generated/scikits.scattpy.EMT_Particle.html#scikits.scattpy.EMT_Particle" title="scikits.scattpy.EMT_Particle"><tt class="xref py py-class docutils literal"><span class="pre">EMT_Particle</span></tt></a>.
+There are several classes implementing EMT with the most widely used EMT rules.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.EMT_Particle.html#scikits.scattpy.EMT_Particle" title="scikits.scattpy.EMT_Particle"><tt class="xref py py-obj docutils literal"><span class="pre">EMT_Particle</span></tt></a>(shape0,&nbsp;params,&nbsp;ms,&nbsp;volumes)</td>
+<td>Particle using effective medium theory, an approximation of  inhomogeneous particles with homogeneous one having averaged complex refrecive index m.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.EMT_MGarn_Particle.html#scikits.scattpy.EMT_MGarn_Particle" title="scikits.scattpy.EMT_MGarn_Particle"><tt class="xref py py-obj docutils literal"><span class="pre">EMT_MGarn_Particle</span></tt></a>(shape0,&nbsp;params,&nbsp;ms,&nbsp;volumes)</td>
+<td>Particle using Maxwell-Garnett effective medium theory,</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.EMT_IMGarn_Particle.html#scikits.scattpy.EMT_IMGarn_Particle" title="scikits.scattpy.EMT_IMGarn_Particle"><tt class="xref py py-obj docutils literal"><span class="pre">EMT_IMGarn_Particle</span></tt></a>(shape0,&nbsp;params,&nbsp;ms,&nbsp;volumes)</td>
+<td>Particle using inverse Maxwell-Garnett effective medium theory,</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/scikits.scattpy.EMT_Brugg_Particle.html#scikits.scattpy.EMT_Brugg_Particle" title="scikits.scattpy.EMT_Brugg_Particle"><tt class="xref py py-obj docutils literal"><span class="pre">EMT_Brugg_Particle</span></tt></a>(shape0,&nbsp;params,&nbsp;ms,&nbsp;volumes)</td>
+<td>Particle using Bruggeman effective medium theory,</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+</div>

@@ -1,0 +1,31 @@
+scikits.scattpy.LayeredConfocalSpheroid
+=======================================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: LayeredConfocalSpheroid
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LayeredConfocalSpheroid.__init__
+      ~LayeredConfocalSpheroid.copy
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~LayeredConfocalSpheroid.Nlayers
+      ~LayeredConfocalSpheroid.g
+      ~LayeredConfocalSpheroid.xv
+   
+   

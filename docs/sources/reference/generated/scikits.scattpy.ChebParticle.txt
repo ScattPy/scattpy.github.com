@@ -1,0 +1,31 @@
+scikits.scattpy.ChebParticle
+============================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: ChebParticle
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ChebParticle.__init__
+      ~ChebParticle.copy
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ChebParticle.Nlayers
+      ~ChebParticle.g
+      ~ChebParticle.xv
+   
+   

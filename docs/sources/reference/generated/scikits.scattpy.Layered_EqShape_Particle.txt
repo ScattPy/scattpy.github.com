@@ -1,0 +1,31 @@
+scikits.scattpy.Layered_EqShape_Particle
+========================================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: Layered_EqShape_Particle
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Layered_EqShape_Particle.__init__
+      ~Layered_EqShape_Particle.copy
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Layered_EqShape_Particle.Nlayers
+      ~Layered_EqShape_Particle.g
+      ~Layered_EqShape_Particle.xv
+   
+   

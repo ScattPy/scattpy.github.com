@@ -1,0 +1,6 @@
+scikits.scattpy.ebcm
+====================
+
+.. currentmodule:: scikits.scattpy
+
+.. autofunction:: ebcm

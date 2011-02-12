@@ -1,0 +1,30 @@
+scikits.scattpy.ShapeSpheroid
+=============================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: ShapeSpheroid
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ShapeSpheroid.__init__
+      ~ShapeSpheroid.copy
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ShapeSpheroid.a
+      ~ShapeSpheroid.b
+   
+   

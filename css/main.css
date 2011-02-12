@@ -97,13 +97,16 @@
 		border-left: 5px solid #ddd;
 		font-size: 110%;
 		white-space: pre;
+		overflow: auto;
 		/* begin css 3 or browser specific rules - do not remove!
 		see: http://forums.techguy.org/archive/index.php/t-249849.html */
+		/*
 		white-space: pre-wrap;
 		word-wrap: break-word;
 		white-space: -moz-pre-wrap;
 		white-space: -pre-wrap;
 		white-space: -o-pre-wrap;
+		*/
 		/* end css 3 or browser specific rules */
 		}
 	code,
@@ -2005,7 +2008,6 @@
 	.smstxt { background: url("/lib/images/icons/phone.png") 0 0 no-repeat; padding-left: 20px; }
 	.bell { background: url("/lib/images/icons/bell.png") 0 0 no-repeat; padding-left: 20px; }
 	.im { background: url("/lib/images/icons/comment.png") 0 0 no-repeat; padding-left: 20px; }
-	.internal,
 	.box { background: url("/lib/images/icons/box.png") 0 0 no-repeat; padding-left: 20px; }
 	.comments {
 		background: url("/lib/images/icons/comments.png") 0 0 no-repeat;

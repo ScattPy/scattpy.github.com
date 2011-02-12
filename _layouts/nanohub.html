@@ -49,12 +49,22 @@
 {% if navitem %}
 	<div id="trail">
 		You are here: <a href="{{navitem.url}}">{{navitem.name}}</a> {% if navsubitem %}&rsaquo; <a href="{{navsubitem.url}}">{{navsubitem.name}}</a>{%endif%}	</div>
+{% elsif page.topnav %}
+	<div id="trail">
+		You are here:
+	{% for topitem in page.topnav %}
+		<a href="{{topitem.url}}">{{topitem.title}}</a> {% if forloop.last == false %}&rsaquo;{%endif%}
+	{% endfor %}
+	</div>
 {% endif %}
 
   <div id="wrap">
 	<div id="content" class="com_content">
 		<div class="main section withleft">
 		<div class="aside">
+{% if page.sidenav %}
+	{{page.sidenav|replace:'>scikits.scattpy.','>'}}
+{%else%}
 		  <ul class="menu">
 {% if navitem.subnav %}
 		  <li class="parent {%if page.title != navitem.name%}active {%endif%}item58"><a href="{{navitem.url}}"><span>{{navitem.name}}</span></a>
@@ -72,6 +82,7 @@
 			</ul>
 			</li>
 		  </ul>
+{%endif%}
 		</div><!-- / #column-left -->
 		<div class="subject">
 			<div class="contentpaneopen heading">

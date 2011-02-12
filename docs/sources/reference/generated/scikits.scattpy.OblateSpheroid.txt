@@ -1,0 +1,31 @@
+scikits.scattpy.OblateSpheroid
+==============================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: OblateSpheroid
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~OblateSpheroid.__init__
+      ~OblateSpheroid.copy
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~OblateSpheroid.Nlayers
+      ~OblateSpheroid.g
+      ~OblateSpheroid.xv
+   
+   

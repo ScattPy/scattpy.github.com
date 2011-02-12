@@ -1,0 +1,6 @@
+scikits.scattpy.svm
+===================
+
+.. currentmodule:: scikits.scattpy
+
+.. autofunction:: svm

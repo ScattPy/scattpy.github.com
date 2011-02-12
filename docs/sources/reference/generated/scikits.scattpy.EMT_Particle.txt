@@ -1,0 +1,32 @@
+scikits.scattpy.EMT_Particle
+============================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: EMT_Particle
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~EMT_Particle.__init__
+      ~EMT_Particle.copy
+      ~EMT_Particle.mixing_rule
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~EMT_Particle.Nlayers
+      ~EMT_Particle.g
+      ~EMT_Particle.xv
+   
+   

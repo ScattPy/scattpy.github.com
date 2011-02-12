@@ -1,0 +1,23 @@
+scikits.scattpy.Shape
+=====================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: Shape
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Shape.R
+      ~Shape.__init__
+   
+   
+
+   
+   
+   

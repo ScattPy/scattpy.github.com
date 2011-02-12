@@ -1,0 +1,6 @@
+scikits.scattpy.pmm
+===================
+
+.. currentmodule:: scikits.scattpy
+
+.. autofunction:: pmm

@@ -32,11 +32,17 @@ nav:
     - name:     Documentation
       url:      /docs/
       subnav:
+              - name:   User Guide
+                url:    /docs/user/
+    
               - name:   Getting Started
                 url:    /docs/user/getting_started.html
     
               - name:   Installation
                 url:    /docs/user/installation.html
+
+              - name:    ScattPy Reference
+                url:     /docs/reference/
     
     - name:     About
       url:      /about/
@@ -54,6 +60,7 @@ css:
     - /css/github.css
     - /css/tex.css
     - /css/main.css
+    - /css/sphinx.css
     
 js:
     - /lib/mootools.js

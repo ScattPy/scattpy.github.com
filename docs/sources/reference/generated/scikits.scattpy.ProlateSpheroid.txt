@@ -1,0 +1,31 @@
+scikits.scattpy.ProlateSpheroid
+===============================
+
+.. currentmodule:: scikits.scattpy
+
+.. autoclass:: ProlateSpheroid
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ProlateSpheroid.__init__
+      ~ProlateSpheroid.copy
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ProlateSpheroid.Nlayers
+      ~ProlateSpheroid.g
+      ~ProlateSpheroid.xv
+   
+   

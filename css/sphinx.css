@@ -1,0 +1,61 @@
+/*---------------------------------------------------------------
+	Headers
+---------------------------------------------------------------*/
+	.sphinxdoc h1{display:none}
+	.sphinxdoc h2{
+		margin: 0;
+		margin-top: 5px;
+		font-size: 1.3em;
+		line-height: 2em;
+		letter-spacing: -.02em;
+		font-weight: bold;
+		color: #333;
+		}
+	.sphinxdoc h3 {
+		font-size: 1.1em;
+		/*font-style: italic;*/
+		color: #666;
+		margin: 2em 0 0 0;
+		}
+
+/* MATH */
+
+img.math {
+    vertical-align: middle;
+}
+
+div.body div.math p {
+    text-align: center;
+}
+
+span.eqno {
+    float: right;
+}
+
+/* SIDEBAR */
+
+	.withleft .aside li.current a, 
+	.withleft .aside li a.current {
+		background-color: #fff;
+		color: #333;
+		}
+	.withleft .aside li.current li a {
+		padding-left: 1.2em;
+		background: #F5F5F5 url("/lib/images/bullets/arrow.gif") 0 0.7em no-repeat;
+		color: #6699cc;
+		}
+	.withleft .aside li.current li.current a {
+		background-color: #fff;
+		color: #333;
+		}
+	.withleft .aside li.current a:hover {
+		background-color: #333;
+		color: #fff;
+		}
+	.withleft .aside li.current li.current a:hover {
+		background-color: #333;
+		color: #fff;
+		}
+	.withleft .aside li li li a{
+		font-size: 70%
+		}
