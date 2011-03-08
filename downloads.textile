@@ -4,7 +4,7 @@ permalink:  /download/
 title:      Download
 ---
 
-h3. Version 0.1.1
+h3. Version {{site.ver}}
 
 The package can be installed using the standard Python packaging tools, e.g.
 
@@ -19,8 +19,8 @@ $ sudo easy_install scikits.scattpy
 {% endhighlight %}
 
 For the manual installation of the package download the sources
-* "scikits.scattpy-0.1.0.zip":http://github.com/ScattPy/scikits.scattpy/zipball/0.1.1 ,
-* "scikits.scattpy-0.1.0.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/0.1.1 .
+* "scikits.scattpy-{{site.ver}}.zip":http://github.com/ScattPy/scikits.scattpy/zipball/{{site.ver}} ,
+* "scikits.scattpy-{{site.ver}}.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/{{site.ver}} .
 
 Unzip them and run
 
@@ -39,8 +39,8 @@ Note, that ScattPy requires:
 h3. Developement version
 
 To install the ScattPy developement version download
-* "scikits.scattpy-0.1.0-git.zip":http://github.com/ScattPy/scikits.scattpy/zipball/master ,
-* "scikits.scattpy-0.1.0-git.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/master .
+* "scikits.scattpy-{{site.ver}}-git.zip":http://github.com/ScattPy/scikits.scattpy/zipball/master ,
+* "scikits.scattpy-{{site.ver}}-git.tar.gz":http://github.com/ScattPy/scikits.scattpy/tarball/master .
 
 or download it from the git repository
 

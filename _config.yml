@@ -13,6 +13,8 @@ feed:           /atom.xml
 description:    "ScattPy - Python scikits package for light scattering computations."
 comment:        Light Scattering methods for Python
 
+ver: 0.1.2
+
 author:
     name:       Alexander Vinokurov
     email:      alexaner.a.vinokurov@gmail.com
